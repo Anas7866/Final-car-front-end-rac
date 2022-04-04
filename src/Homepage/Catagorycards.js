@@ -1,6 +1,7 @@
 import React from 'react'
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
+import { BrowserRouter as Router, Switch, Link, Route } from "react-router-dom";
 
 
 const responsive = {
@@ -38,7 +39,7 @@ function Catagorycards() {
 
                         <div className="card-body" id="blur-bg">
 
-                            <button className="btn btn-primary" style={{ backgroundColor: "rgba(255, 255, 255, 0.315)", border: "2px solid #2B6777", color: '#2B6777', borderRadius: "10px" }}>Go somewhere</button>
+                        <Link to="/Product-details">     <button className="btn btn-primary" style={{ backgroundColor: "rgba(255, 255, 255, 0.315)", border: "2px solid #2B6777", color: '#2B6777', borderRadius: "10px" }}>Book</button></Link>
 
                             <p className="card-text pt-3">
                             Grandie XLR
